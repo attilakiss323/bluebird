@@ -1,7 +1,7 @@
 {
-  "name": "bluebird",
+  "name": "bb-bluebird",
   "description": "Full featured Promises/A+ implementation with exceptionally good performance",
-  "version": "3.5.0",
+  "version": "1.0.0",
   "keywords": [
     "promise",
     "performance",
@@ -25,20 +25,11 @@
     "generate-browser-full": "node tools/build.js --no-clean --no-debug --release --browser --minify",
     "generate-browser-core": "node tools/build.js --features=core --no-debug --release --zalgo --browser --minify && mv js/browser/bluebird.js js/browser/bluebird.core.js && mv js/browser/bluebird.min.js js/browser/bluebird.core.min.js"
   },
-  "homepage": "https://github.com/petkaantonov/bluebird",
   "repository": {
     "type": "git",
-    "url": "git://github.com/petkaantonov/bluebird.git"
-  },
-  "bugs": {
-    "url": "http://github.com/petkaantonov/bluebird/issues"
+    "url": "https://github.com/attilakiss323/bluebird"
   },
   "license": "MIT",
-  "author": {
-    "name": "Petka Antonov",
-    "email": "petka_antonov@hotmail.com",
-    "url": "http://github.com/petkaantonov/"
-  },
   "devDependencies": {
     "acorn": "~0.6.0",
     "baconjs": "^0.7.43",
