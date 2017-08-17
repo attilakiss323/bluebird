@@ -1,7 +1,7 @@
 {
   "name": "bb-bluebird",
   "description": "Full featured Promises/A+ implementation with exceptionally good performance",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "promise",
     "performance",
@@ -22,7 +22,7 @@
     "test": "node tools/test.js",
     "istanbul": "istanbul",
     "prepublish": "npm run generate-browser-core && npm run generate-browser-full",
-    "generate-browser-full": "node tools/build.js --features='core settle'  --no-clean --no-debug --release --browser --minify",
+    "generate-browser-full": "node tools/build.js --features='core settle timers'  --no-clean --no-debug --release --browser --minify",
     "generate-browser-core": "node tools/build.js --features=core --no-debug --release --zalgo --browser --minify && mv js/browser/bluebird.js js/browser/bluebird.core.js && mv js/browser/bluebird.min.js js/browser/bluebird.core.min.js"
   },
   "repository": {
